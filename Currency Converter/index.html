@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1979f62d1e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <form>
+            <div class="amtbox">
+                <h2>Currency Converter</h2>
+                <label> Enter Amount</label>
+                <input type="text" id="amt">
+            </div>
+            <br>
+            <hr>
+            <div class="dropbox">
+
+                <div class="from">
+                    <h4>From</h4>
+                    <div class="selectcontainer">
+                        <img src="https://flagsapi.com/US/flat/64.png"  id="from" />
+                        <select name="from">
+                        </select>
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+
+                <div class="to">
+                    <h4>To</h4>
+                    <div class="selectcontainer"> 
+                        <img src="https://flagsapi.com/IN/flat/64.png" id="to" />
+                    <select name="to">
+                    </select>
+                </div>
+                </div>
+
+            </div>
+            <p id="output"></p>
+
+
+            <div class="btn">
+                <button type="submit">Get Exchange Rate</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <script src="code.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+
+</html>

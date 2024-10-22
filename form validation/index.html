@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1979f62d1e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+
+            <div class="inputbox">
+                <label>Name </label>
+                <input type="text"  id="name" placeholder="Enter your name"  onkeyup="namecheck()">
+                <span id="nameerror"></span>
+            </div>
+            <div class="inputbox">
+                <label>Email </label>
+                <input type="email"  id="email" placeholder="xyz@gmail.com" onkeyup="emailvalid()">
+                <span id="emailerror"></span>
+            </div>
+
+            <div class="inputbox">
+                <label>Create Password </label>
+                <input type="password" id="password"  onkeyup="passvalid()">
+                <span id="passerror"></span>
+            </div>
+
+            <div class="inputbox">
+                <label>Confirm Password </label>
+                <input type="password" id="password-c" onkeyup="confirmp()">
+                <span id="passc"></span>
+            </div>
+
+            <div class="inputbox">
+                <label>Phone No </label>
+                <input type="text" id="number" placeholder="9999999999" onkeyup="phonvalid()">
+                <span id="phoneerror"></span>
+            </div>
+
+            <button onclick="return verify()">Submit</button>
+            <span id="sub-err"></span>
+
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
